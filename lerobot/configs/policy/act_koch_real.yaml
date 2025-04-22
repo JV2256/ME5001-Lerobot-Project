@@ -1,0 +1,22 @@
+_target_: lerobot.common.policy.act.ACTConfig
+
+type: act
+
+observation:
+  state: true
+  images:
+    E22S: true
+    E12: true
+
+action_dim: 7         # 6 DOF + 1 gripper
+horizon: 8
+context_len: 2
+
+dim_model: 512
+n_heads: 8
+n_encoder_layers: 4
+n_decoder_layers: 4
+dropout: 0.1
+
+device: cuda
+

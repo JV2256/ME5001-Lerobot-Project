@@ -1,0 +1,28 @@
+_target_: lerobot.configs.TrainConfig
+
+job_name: act_koch_real_v5
+output_dir: outputs/train/act_koch_real_v5
+
+dataset:
+  repo_id: /home/wjw/lerobot/results_v4
+
+env:
+  type: xarm
+
+policy:
+  type: act
+  observation:
+    state: true
+    images:
+      E22S: true
+      E12: true
+  hidden_dim: 512
+  num_layers: 4
+  context_len: 16
+  image_token_dim: 128
+  image_encoder: resnet18
+  use_spatial_softmax: false
+
+wandb:
+  enable: false
+

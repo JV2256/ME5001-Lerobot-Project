@@ -1,0 +1,16 @@
+_target_: lerobot.scripts.train.TrainPipelineConfig
+
+policy: act_koch_real
+env: koch_real
+
+dataset:
+  repo_id: wjw_user/koch_static_v1
+  use_imagenet_stats: true
+
+output_dir: outputs/train/act_koch_test
+job_name: act_koch_test
+
+device: cuda
+wandb:
+  enable: false
+

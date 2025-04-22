@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/jpegtran.dir/__/jpegtran.c.o CMakeFiles/jpegtran.dir/__/cdjpeg.c.o CMakeFiles/jpegtran.dir/__/rdswitch.c.o CMakeFiles/jpegtran.dir/__/transupp.c.o -o ../jpegtran  -Wl,-rpath,/home/wjw/lerobot/libjpeg-turbo-3.0.1: ../libjpeg.so.62.4.0

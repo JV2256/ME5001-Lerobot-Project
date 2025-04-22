@@ -1,0 +1,388 @@
+.
+├── benchmarks
+│   └── video
+├── CODE_OF_CONDUCT.md
+├── Code of lerobot.ipynb
+├── CONTRIBUTING.md
+├── docker
+│   ├── lerobot-cpu
+│   ├── lerobot-gpu
+│   └── lerobot-gpu-dev
+├── examples
+│   ├── 10_use_so100.md
+│   ├── 11_use_lekiwi.md
+│   ├── 11_use_moss.md
+│   ├── 1_load_lerobot_dataset.py
+│   ├── 2_evaluate_pretrained_policy.py
+│   ├── 3_train_policy.py
+│   ├── 4_train_policy_with_script.md
+│   ├── 7_get_started_with_real_robot.md
+│   ├── 8_use_stretch.md
+│   ├── 9_use_aloha.md
+│   ├── advanced
+│   └── port_datasets
+├── figures
+│   ├── ACT Vision-Guided Model Training Loss Curve
+│   ├── data_recording_photo.jpg
+│   ├── E12相机
+│   ├── E22S相机
+│   ├── End-to-End Autonomy.png
+│   ├── error_analysis_plots
+│   ├── error_heatmaps
+│   ├── error_summary_all.csv
+│   ├── follower_rest.jpg
+│   ├── follower_rotated.jpg
+│   ├── follower_zero了.jpg
+│   ├── frame_sync_summary.png
+│   ├── frame_sync_summary.tex
+│   ├── GPU_CUDA
+│   ├── Hierarchical structure.png
+│   ├── joint_mae_charts
+│   ├── leader_rest.jpg
+│   ├── leader_rotated.jpg
+│   ├── leader_zero.jpg
+│   ├── loss_exp_fit.png
+│   ├── loss_gradnorm_curve.png
+│   ├── mae_bar_chart_all_clips.png
+│   ├── MAE_J1_bar_chart.png
+│   ├── MAE_J2_bar_chart.png
+│   ├── MAE_J3_bar_chart.png
+│   ├── MAE_J4_bar_chart.png
+│   ├── MAE_J5_bar_chart.png
+│   ├── MAE_J6_bar_chart.png
+│   ├── main_follower_json.png
+│   ├── main_leader_json.png
+│   ├── mse_plots
+│   ├── mse_summary.csv
+│   ├── posC_side_t0.png
+│   ├── posC_side_t2.png
+│   ├── posC_top_t0.png
+│   ├── posC_top_t2.png
+│   ├── Position-Adaptive Grasping.png
+│   ├── position_A.jpg
+│   ├── position_B.jpg
+│   ├── position_C.jpg
+│   ├── position_C_side.png
+│   ├── position_C_top.png
+│   ├── position_D.jpg
+│   ├── Self-Corrective Behavior.png
+│   ├── state_action.png
+│   ├── Training and Validation Loss Curve.jpg
+│   ├── training_curve.png
+│   ├── train procedure.jpg
+│   ├── trajectories
+│   ├── trajectory_compare_clip_00008.png
+│   ├── trajectory_compare_clip_00014.png
+│   ├── trajectory_compare_clip_00026.png
+│   ├── trajectory_compare_clip_00038.png
+│   ├── trajectory_error_summary.csv
+│   ├── trajectory_plots
+│   ├── velocity_plots
+│   ├── workplace_side.jpg
+│   ├── workplace_top.jpg
+│   ├── 上传huggingface的数据
+│   ├── 主臂实物图
+│   ├── 从臂实物图jpg
+│   ├── 从臂的URDF
+│   └── 整体工作空间
+├── lerobot
+│   ├── common
+│   ├── configs
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── scripts
+│   ├── templates
+│   └── __version__.py
+├── libjpeg-turbo-3.0.1
+│   ├── BUILDING.md
+│   ├── cderror.h
+│   ├── cdjpeg.c
+│   ├── cdjpeg.h
+│   ├── change.log
+│   ├── ChangeLog.md
+│   ├── cjpeg
+│   ├── cjpeg.1
+│   ├── cjpeg.c
+│   ├── cjpeg-static
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   ├── cmake_install.cmake
+│   ├── CMakeLists.txt
+│   ├── cmakescripts
+│   ├── cmake_uninstall.cmake
+│   ├── cmyk.h
+│   ├── coderules.txt
+│   ├── croptest
+│   ├── croptest.in
+│   ├── CTestTestfile.cmake
+│   ├── djpeg
+│   ├── djpeg.1
+│   ├── djpeg.c
+│   ├── djpeg-static
+│   ├── doc
+│   ├── doxygen.config
+│   ├── doxygen-extra.css
+│   ├── example
+│   ├── example.c
+│   ├── example-static
+│   ├── fuzz
+│   ├── install_manifest.txt
+│   ├── jaricom.c
+│   ├── java
+│   ├── jcapimin.c
+│   ├── jcapistd.c
+│   ├── jcarith.c
+│   ├── jccoefct.c
+│   ├── jccolext.c
+│   ├── jccolor.c
+│   ├── jcdctmgr.c
+│   ├── jcdiffct.c
+│   ├── jchuff.c
+│   ├── jchuff.h
+│   ├── jcicc.c
+│   ├── jcinit.c
+│   ├── jclhuff.c
+│   ├── jclossls.c
+│   ├── jcmainct.c
+│   ├── jcmarker.c
+│   ├── jcmaster.c
+│   ├── jcmaster.h
+│   ├── jcomapi.c
+│   ├── jconfig.h
+│   ├── jconfig.h.in
+│   ├── jconfigint.h
+│   ├── jconfigint.h.in
+│   ├── jconfig.txt
+│   ├── jcparam.c
+│   ├── jcphuff.c
+│   ├── jcprepct.c
+│   ├── jcsample.c
+│   ├── jcstest
+│   ├── jcstest.c
+│   ├── jctrans.c
+│   ├── jdapimin.c
+│   ├── jdapistd.c
+│   ├── jdarith.c
+│   ├── jdatadst.c
+│   ├── jdatadst-tj.c
+│   ├── jdatasrc.c
+│   ├── jdatasrc-tj.c
+│   ├── jdcoefct.c
+│   ├── jdcoefct.h
+│   ├── jdcol565.c
+│   ├── jdcolext.c
+│   ├── jdcolor.c
+│   ├── jdct.h
+│   ├── jddctmgr.c
+│   ├── jddiffct.c
+│   ├── jdhuff.c
+│   ├── jdhuff.h
+│   ├── jdicc.c
+│   ├── jdinput.c
+│   ├── jdlhuff.c
+│   ├── jdlossls.c
+│   ├── jdmainct.c
+│   ├── jdmainct.h
+│   ├── jdmarker.c
+│   ├── jdmaster.c
+│   ├── jdmaster.h
+│   ├── jdmerge.c
+│   ├── jdmerge.h
+│   ├── jdmrg565.c
+│   ├── jdmrgext.c
+│   ├── jdphuff.c
+│   ├── jdpostct.c
+│   ├── jdsample.c
+│   ├── jdsample.h
+│   ├── jdtrans.c
+│   ├── jerror.c
+│   ├── jerror.h
+│   ├── jfdctflt.c
+│   ├── jfdctfst.c
+│   ├── jfdctint.c
+│   ├── jidctflt.c
+│   ├── jidctfst.c
+│   ├── jidctint.c
+│   ├── jidctred.c
+│   ├── jinclude.h
+│   ├── jlossls.h
+│   ├── jmemmgr.c
+│   ├── jmemnobs.c
+│   ├── jmemsys.h
+│   ├── jmorecfg.h
+│   ├── jpegapicomp.h
+│   ├── jpegint.h
+│   ├── jpeglib.h
+│   ├── jpeg_nbits_table.h
+│   ├── jpegtran
+│   ├── jpegtran.1
+│   ├── jpegtran.c
+│   ├── jpegtran-static
+│   ├── jquant1.c
+│   ├── jquant2.c
+│   ├── jsamplecomp.h
+│   ├── jsimddct.h
+│   ├── jsimd.h
+│   ├── jstdhuff.c
+│   ├── jutils.c
+│   ├── jversion.h
+│   ├── jversion.h.in
+│   ├── libjpeg.a
+│   ├── libjpeg.map
+│   ├── libjpeg.map.in
+│   ├── libjpeg.so -> libjpeg.so.62
+│   ├── libjpeg.so.62 -> libjpeg.so.62.4.0
+│   ├── libjpeg.so.62.4.0
+│   ├── libjpeg.txt
+│   ├── libturbojpeg.a
+│   ├── libturbojpeg.so -> libturbojpeg.so.0
+│   ├── libturbojpeg.so.0 -> libturbojpeg.so.0.3.0
+│   ├── libturbojpeg.so.0.3.0
+│   ├── LICENSE.md
+│   ├── Makefile
+│   ├── md5
+│   ├── pkgscripts
+│   ├── rdbmp.c
+│   ├── rdcolmap.c
+│   ├── rdgif.c
+│   ├── rdjpgcom
+│   ├── rdjpgcom.1
+│   ├── rdjpgcom.c
+│   ├── rdppm.c
+│   ├── rdswitch.c
+│   ├── rdtarga.c
+│   ├── README.ijg
+│   ├── README.md
+│   ├── release
+│   ├── sharedlib
+│   ├── simd
+│   ├── strtest
+│   ├── strtest.c
+│   ├── structure.txt
+│   ├── testimages
+│   ├── tiff-4.6.0
+│   ├── tiff-4.6.0.tar.gz
+│   ├── tjbench
+│   ├── tjbench.c
+│   ├── tjbench-static
+│   ├── tjbenchtest
+│   ├── tjbenchtest.in
+│   ├── tjexample
+│   ├── tjexample.c
+│   ├── tjexampletest
+│   ├── tjexampletest.in
+│   ├── tjunittest
+│   ├── tjunittest.c
+│   ├── tjunittest-static
+│   ├── tjutil.c
+│   ├── tjutil.h
+│   ├── transupp.c
+│   ├── transupp.h
+│   ├── turbojpeg.c
+│   ├── turbojpeg.h
+│   ├── turbojpeg-jni.c
+│   ├── turbojpeg-mapfile
+│   ├── turbojpeg-mapfile.jni
+│   ├── turbojpeg-mp.c
+│   ├── usage.txt
+│   ├── win
+│   ├── wizard.txt
+│   ├── wrbmp.c
+│   ├── wrgif.c
+│   ├── wrjpgcom
+│   ├── wrjpgcom.1
+│   ├── wrjpgcom.c
+│   ├── wrppm.c
+│   └── wrtarga.c
+├── libjpeg-turbo-3.0.1.tar.gz
+├── LICENSE
+├── Makefile
+├── media
+│   ├── aloha
+│   ├── gym
+│   ├── koch
+│   ├── lekiwi
+│   ├── lerobot-logo-light.png
+│   ├── lerobot-logo-thumbnail.png
+│   ├── moss
+│   ├── so100
+│   ├── tutorial
+│   └── wandb.png
+├── outputs
+│   └── train
+├── pyproject.toml
+├── README.md
+├── results
+│   ├── models
+│   └── recordings
+├── results_train5
+│   ├── data
+│   ├── epsiod0成功抓取，但没放置在目标位置，机械臂有不停的尝试再抓取.mp4
+│   ├── meta
+│   ├── videos
+│   └── 一直定位到成功抓取.mp4
+├── results_v5
+│   ├── data
+│   ├── meta
+│   ├── videos
+│   └── 回放epsiode0的过程.mp4
+├── structure.txt
+├── Test code of lerobot
+│   ├── test1.ipynb
+│   ├── TEST1.ipynb
+│   ├── TEST2.ipynb
+│   ├── TEST3.ipynb
+│   ├── TEST4.ipynb
+│   ├── TEST5.ipynb
+│   ├── TEST6.ipynb
+│   ├── TEST7.ipynb
+│   └── TEST8.ipynb
+├── tests
+│   ├── configs
+│   ├── conftest.py
+│   ├── fixtures
+│   ├── __init__.py
+│   ├── lerobot
+│   ├── mock_cv2.py
+│   ├── mock_dynamixel_sdk.py
+│   ├── mock_pyrealsense2.py
+│   ├── mock_scservo_sdk.py
+│   ├── scripts
+│   ├── test_available.py
+│   ├── test_cameras.py
+│   ├── test_compute_stats.py
+│   ├── test_control_robot.py
+│   ├── test_datasets.py
+│   ├── test_delta_timestamps.py
+│   ├── test_envs.py
+│   ├── test_examples.py
+│   ├── test_image_transforms.py
+│   ├── test_image_writer.py
+│   ├── test_io_utils.py
+│   ├── test_logging_utils.py
+│   ├── test_motors.py
+│   ├── test_online_buffer.py
+│   ├── test_optimizers.py
+│   ├── test_policies.py
+│   ├── test_random_utils.py
+│   ├── test_robots.py
+│   ├── test_sampler.py
+│   ├── test_schedulers.py
+│   ├── test_train_utils.py
+│   ├── test_utils.py
+│   ├── test_visualize_dataset.py
+│   └── utils.py
+├── videos
+│   ├── 1.Emergent Reactive Behaviors.mp4
+│   ├── 2.Emergent Reactive Behaviors.mp4
+│   ├── demo of robot synchronous control.mp4
+│   ├── position_A_demo.mp4
+│   ├── position_B_demo.mp4
+│   ├── position_C_demo.mp4
+│   ├── position_D_demo.mp4
+│   ├── Reliable End-to-End Control.mp4
+│   ├── Spatial Generalization Capability.mp4
+│   └── Video Demonstration of data collection.mp4
+└── Wu Jiawei report.pdf
+
+65 directories, 320 files

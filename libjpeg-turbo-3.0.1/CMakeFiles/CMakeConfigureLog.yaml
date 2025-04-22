@@ -1,0 +1,614 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      The system is: Linux - 6.8.0-52-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-NL99BS"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-NL99BS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-NL99BS'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6ea6e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6ea6e.dir/build.make CMakeFiles/cmTC_6ea6e.dir/build
+        gmake[1]: Entering directory '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-NL99BS'
+        Building C object CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o -c /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ea6e.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6ea6e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0wmTGW.s
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/11/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ea6e.dir/'
+         as -v --64 -o CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o /tmp/cc0wmTGW.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_6ea6e
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ea6e.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ea6e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6ea6e.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4G8ygi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6ea6e /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        collect2 version 11.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4G8ygi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6ea6e /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.38
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ea6e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6ea6e.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o -o cmTC_6ea6e
+        gmake[1]: Leaving directory '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-NL99BS'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-NL99BS']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6ea6e/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_6ea6e.dir/build.make CMakeFiles/cmTC_6ea6e.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-NL99BS']
+        ignore line: [Building C object CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o -c /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ea6e.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_6ea6e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc0wmTGW.s]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ea6e.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o /tmp/cc0wmTGW.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_6ea6e]
+        ignore line: [/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ea6e.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6ea6e' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6ea6e.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4G8ygi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6ea6e /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc4G8ygi.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6ea6e] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 11.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4G8ygi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_6ea6e /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -v CMakeFiles/cmTC_6ea6e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.38
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckTypeSize.cmake:262 (check_include_file)"
+      - "CMakeLists.txt:433 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-9tACiW"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-9tACiW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-9tACiW'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fbd71/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fbd71.dir/build.make CMakeFiles/cmTC_fbd71.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-9tACiW”
+        Building C object CMakeFiles/cmTC_fbd71.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_fbd71.dir/CheckIncludeFile.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-9tACiW/CheckIncludeFile.c
+        Linking C executable cmTC_fbd71
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbd71.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_fbd71.dir/CheckIncludeFile.c.o -o cmTC_fbd71
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-9tACiW”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckTypeSize.cmake:263 (check_include_file)"
+      - "CMakeLists.txt:433 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-W5JOsW"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-W5JOsW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-W5JOsW'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bdb28/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bdb28.dir/build.make CMakeFiles/cmTC_bdb28.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-W5JOsW”
+        Building C object CMakeFiles/cmTC_bdb28.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_bdb28.dir/CheckIncludeFile.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-W5JOsW/CheckIncludeFile.c
+        Linking C executable cmTC_bdb28
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdb28.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_bdb28.dir/CheckIncludeFile.c.o -o cmTC_bdb28
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-W5JOsW”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckTypeSize.cmake:264 (check_include_file)"
+      - "CMakeLists.txt:433 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-qzc6J2"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-qzc6J2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-qzc6J2'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c1487/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c1487.dir/build.make CMakeFiles/cmTC_c1487.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-qzc6J2”
+        Building C object CMakeFiles/cmTC_c1487.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c1487.dir/CheckIncludeFile.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-qzc6J2/CheckIncludeFile.c
+        Linking C executable cmTC_c1487
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1487.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c1487.dir/CheckIncludeFile.c.o -o cmTC_c1487
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-qzc6J2”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "CMakeLists.txt:433 (check_type_size)"
+    checks:
+      - "Check size of size_t"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-6lf1go"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-6lf1go"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SIZE_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-6lf1go'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d6df6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d6df6.dir/build.make CMakeFiles/cmTC_d6df6.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-6lf1go”
+        Building C object CMakeFiles/cmTC_d6df6.dir/SIZE_T.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_d6df6.dir/SIZE_T.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-6lf1go/SIZE_T.c
+        Linking C executable cmTC_d6df6
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6df6.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d6df6.dir/SIZE_T.c.o -o cmTC_d6df6
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-6lf1go”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "CMakeLists.txt:434 (check_type_size)"
+    checks:
+      - "Check size of unsigned long"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-IMUSC1"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-IMUSC1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_UNSIGNED_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-IMUSC1'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3b0e6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3b0e6.dir/build.make CMakeFiles/cmTC_3b0e6.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-IMUSC1”
+        Building C object CMakeFiles/cmTC_3b0e6.dir/UNSIGNED_LONG.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_3b0e6.dir/UNSIGNED_LONG.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-IMUSC1/UNSIGNED_LONG.c
+        Linking C executable cmTC_3b0e6
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b0e6.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_3b0e6.dir/UNSIGNED_LONG.c.o -o cmTC_3b0e6
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-IMUSC1”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:437 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BUILTIN_CTZL"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-ibQKOv"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-ibQKOv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_BUILTIN_CTZL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-ibQKOv'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_95638/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_95638.dir/build.make CMakeFiles/cmTC_95638.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-ibQKOv”
+        Building C object CMakeFiles/cmTC_95638.dir/src.c.o
+        /usr/bin/cc -DHAVE_BUILTIN_CTZL   -o CMakeFiles/cmTC_95638.dir/src.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-ibQKOv/src.c
+        Linking C executable cmTC_95638
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95638.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_95638.dir/src.c.o -o cmTC_95638
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-ibQKOv”
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "CMakeLists.txt:449 (check_c_source_runs)"
+    checks:
+      - "Performing Test RIGHT_SHIFT_IS_UNSIGNED"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-EXxFXs"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-EXxFXs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "RIGHT_SHIFT_IS_UNSIGNED_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-EXxFXs'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df2fd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_df2fd.dir/build.make CMakeFiles/cmTC_df2fd.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-EXxFXs”
+        Building C object CMakeFiles/cmTC_df2fd.dir/src.c.o
+        /usr/bin/cc -DRIGHT_SHIFT_IS_UNSIGNED   -o CMakeFiles/cmTC_df2fd.dir/src.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-EXxFXs/src.c
+        Linking C executable cmTC_df2fd
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df2fd.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_df2fd.dir/src.c.o -o cmTC_df2fd
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-EXxFXs”
+        
+      exitCode: 0
+    runResult:
+      variable: "RIGHT_SHIFT_IS_UNSIGNED_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:487 (check_c_source_compiles)"
+    checks:
+      - "Performing Test INLINE_WORKS"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-1MiNkJ"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-1MiNkJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "INLINE_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-1MiNkJ'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1775c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1775c.dir/build.make CMakeFiles/cmTC_1775c.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-1MiNkJ”
+        Building C object CMakeFiles/cmTC_1775c.dir/src.c.o
+        /usr/bin/cc -DINLINE_WORKS   -o CMakeFiles/cmTC_1775c.dir/src.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-1MiNkJ/src.c
+        Linking C executable cmTC_1775c
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1775c.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_1775c.dir/src.c.o -o cmTC_1775c
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-1MiNkJ”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:504 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_THREAD_LOCAL"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-MCpcOd"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-MCpcOd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_THREAD_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-MCpcOd'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80de7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_80de7.dir/build.make CMakeFiles/cmTC_80de7.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-MCpcOd”
+        Building C object CMakeFiles/cmTC_80de7.dir/src.c.o
+        /usr/bin/cc -DHAVE_THREAD_LOCAL   -o CMakeFiles/cmTC_80de7.dir/src.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-MCpcOd/src.c
+        Linking C executable cmTC_80de7
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80de7.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_80de7.dir/src.c.o -o cmTC_80de7
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-MCpcOd”
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:516 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_VERSION_SCRIPT"
+    directories:
+      source: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-CjE0pt"
+      binary: "/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-CjE0pt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_VERSION_SCRIPT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-CjE0pt'
+        
+        Run Build Command(s): /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0bd70/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0bd70.dir/build.make CMakeFiles/cmTC_0bd70.dir/build
+        gmake[1]: 进入目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-CjE0pt”
+        Building C object CMakeFiles/cmTC_0bd70.dir/src.c.o
+        /usr/bin/cc -DHAVE_VERSION_SCRIPT  -Wl,--version-script,/home/wjw/lerobot/libjpeg-turbo-3.0.1/conftest.map -o CMakeFiles/cmTC_0bd70.dir/src.c.o -c /home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-CjE0pt/src.c
+        Linking C executable cmTC_0bd70
+        /home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bd70.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wl,--version-script,/home/wjw/lerobot/libjpeg-turbo-3.0.1/conftest.map CMakeFiles/cmTC_0bd70.dir/src.c.o -o cmTC_0bd70
+        gmake[1]: 离开目录“/home/wjw/lerobot/libjpeg-turbo-3.0.1/CMakeFiles/CMakeScratch/TryCompile-CjE0pt”
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/wjw/miniconda3/envs/lerobot/lib/python3.10/site-packages/cmake/data/share/cmake-3.31/Modules/CheckLanguage.cmake:140 (message)"
+      - "simd/CMakeLists.txt:46 (check_language)"
+    checks:
+      - "Looking for a ASM_NASM compiler"
+    message: |
+      Looking for a ASM_NASM compiler failed with the following output:
+      -- The ASM_NASM compiler identification is unknown
+      -- Didn't find assembler
+      CMake Error at CMakeLists.txt:3 (project):
+        No CMAKE_ASM_NASM_COMPILER could be found.
+      
+        Tell CMake where to find the compiler by setting either the environment
+        variable "ASM_NASM" or the CMake cache entry CMAKE_ASM_NASM_COMPILER to the
+        full path to the compiler, or to the compiler name if it is in the PATH.
+      
+      
+      -- Configuring incomplete, errors occurred!
+      
+...
