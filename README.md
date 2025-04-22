@@ -387,3 +387,35 @@ Additionally, if you are using any of the particular policy architecture, pretra
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=huggingface/lerobot&type=Timeline)](https://star-history.com/#huggingface/lerobot&Timeline)
+
+
+
+## ---
+
+## 🧠 About This Repository: ME5001 Final Project (by WU Jiawei)
+
+This repository includes customized development and results built upon the LeRobot framework for the ME5001 Final Project at NUS. The project focuses on real-world dual-arm teleoperation, multimodal imitation learning, and vision-based grasping.
+
+### 📁 Project Contents
+
+- `lerobot/`: Core teleoperation modules and policy code
+- `examples/`: Demonstration and training scripts
+- `figures/`: Visual analysis, loss curves, and performance plots
+- `tests/`: Unit tests for motion modules and dataset handling
+- `report.pdf`: Final technical report for submission
+- `demo_links.md`: External resource list
+
+---
+
+## 📦 External Downloads (via Baidu NetDisk)
+
+Due to GitHub file size limitations, large files such as joint logs, multimodal recordings, and demo videos are hosted externally:
+
+| File         | Description                                        | Download Link                                                                 | Code  |
+|--------------|----------------------------------------------------|-------------------------------------------------------------------------------|--------|
+| `lerobot.zip` | Complete source, training code, figures, configs  | 🔗 [Download](https://pan.baidu.com/s/1-B1xXXzRN6d_y-oV4ZqLPQ?pwd=ncjj)        | `ncjj` |
+| `outputs.zip` | Synchronized joint states, videos, evaluation data| 🔗 [Download](https://pan.baidu.com/s/1PLsCXWw7q6Wd2qzo-TS6XQ?pwd=72s9)        | `72s9` |
+
+> 📎 Please use Baidu NetDisk App for faster access and decompression.
+> 📂 See `demo_links.md` for a structured summary of all downloadable components.
+
